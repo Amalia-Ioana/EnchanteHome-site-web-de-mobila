@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnchantéHome</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
+  <!-- Title -->
+  <section id="title"  class="gradient-background">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <br><br><br>
+        <!-- <div class="col-10 col-sm-8 col-lg-6">
+          <br><br>
+          <img src="./images/logo.jpg" class="d-block mx-lg-auto img-fluid rounded-circle" alt="Bootstrap Themes" height="200" loading="lazy">
+        </div> -->
+        <!-- <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Discover the Artistry of Living: EnchantéHome - Where Every Piece Tells a Story.</h1>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          </div>
+        </div> -->
+      </div>
+    </div>
+</section>
+
+ <!-- Butonul cu smiley care se mișcă -->
+ <button class="moving-button" onclick="moveSmiley()">😊</button>
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" >Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="questions.html">Questions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="furniture.html">Furniture</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Registration/LogIn</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="galery_image.html">Galery Image</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Login form -->
+<!-- <?php
+if (!empty($_POST["firstname"]))
+   echo $_POST["firstname"];
+if (!empty($_POST["lastname"]))
+   echo " ".$_POST["lastname"];
+?>
+
+<h1>Formular</h1>
+
+<form action="formular.php" method="POST">
+   Nume: <input type="text" name="firstname"><br> 
+   Prenume: <input type="text" name="lastname"><br>
+   
+   <input type="reset" value="RENUNTA">
+   <input type="submit" value="TRIMITE">
+</form> -->
+
+<div class="login-container">
+  <h1>Formular de Login</h1>
+  <form class="login-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>
+      <input type="text" name="email" placeholder="Introduceți adresa de email"><br> 
+      <input type="password" name="password" placeholder="Introduceți parola"><br>
+     
+      <input type="reset" value="RENUNTA">
+      <input type="submit" value="TRIMITE">
+  </form>
+</div>
+
+
+<!-- Footer -->
+<section id="footer"  class="gradient-background">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <p class="text-body-secondary">© EnchantéHome</p>
+      </div>
+    </footer>
+</section>
+
+<script src="./javascript/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+.gradient-background {
+    background: linear-gradient(300deg, #EAECCC, #DBCC95, #C3E2C2, #CD8D7A);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  
+  .profile-img {
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  /* Stilul pentru centrat navbar-ul */
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  align-items: center;
+  font-size: 30px;
+  background-color: transparent;
+}
+
+/* Stiluri pentru conținutul paginii */
+.content {
+  padding-top: 100px; /* Ajustați această valoare pentru a evita suprapunerea conținutului sub navbar */
+}
+
+/* Stiluri pentru meniul hamburger (pentru ecranele mici) */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .content {
+    padding-top: 56px; /* Ajustați această valoare pentru a evita suprapunerea conținutului sub navbar pe ecranele mici */
+  }
+}
+  
+  /* Stil pentru toate elementele din meniul de navigare */
+  .navbar-nav .nav-link {
+    color: #CD8D7A;
+    font-weight: bold;
+  }
+  
+  /* Schimbarea culorii textului în #CD8D7A */
+  .navbar a.nav-link,
+  .navbar-brand,
+  .dropdown-item {
+    color: #CD8D7A;
+    font-weight: bold;
+  }
+  
+  .navbar-brand {
+    font-size: 50px; /* Ajustează dimensiunea textului pentru navbar-brand */
+  }
+
+.d-flex input[type="search"],
+.btn-outline-success {
+      color: #CD8D7A; /* Culoarea textului */
+      background-color: transparent; /* Setează culoarea de fundal transparentă */
+      border-color: #CD8D7A; /* Setează culoarea bordurii la #CD8D7A */
+}
+  
+/* Schimbarea culorii de fundal a butonului la hover */
+.btn-outline-success:hover {
+      background-color: #CD8D7A;
+      color: white; /* Culoarea textului pe hover */
+}
+  
+.navbar-brand {
+      margin-left: 150px; /* Adaugă o margine la stanga de 150px */
+}
+
+/* Stiluri pentru butonul cu smiley */
+ .moving-button {
+  position: fixed;
+  bottom: 20px; /* Distanța de la partea de jos a ecranului */
+  right: 20px; /* Distanța de la partea dreaptă a ecranului */
+  background-color: #CD8D7A;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+/* form */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"],
+.login-form input[type="reset"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-form input[type="submit"],
+.login-form input[type="reset"] {
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.login-form input[type="submit"]:hover,
+.login-form input[type="reset"]:hover {
+  background-color: #0056b3;
+}
