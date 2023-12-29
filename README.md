@@ -8,3 +8,7 @@ Site-ul are in componenta 7 pagini:
   --> Galery Image
   --> Questions
 -----------------------------------------
+
+
+https://github.com/Amalia-Ioana/EnchanteHome-site-web-de-mobila/assets/130684249/dbdb690a-8cf3-40da-8e6a-c01dd7ac1815
+
