@@ -14,7 +14,8 @@ Site-ul are in componenta 7 pagini:
   --> Galery Image - cuprinde imaginile cu mobila realizata de noi.
   
   --> Questions - este sectiunea cu intrebarile pe care le primim des de la clienti si cu alte informatii legate de transportul in alte orase ale tarii.
-  
+
+  --> S-a efectuat conectare la o baza de date realizata in php - phpMyAdmin, in care sunt adaugati toti clientii care completeaza formularul de login.
 -----------------------------------------
 
 https://github.com/Amalia-Ioana/EnchanteHome-site-web-de-mobila/assets/130684249/47e4a39b-0cf1-47de-bba7-1f1273523f9a
